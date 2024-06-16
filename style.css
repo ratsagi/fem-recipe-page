@@ -1,0 +1,118 @@
+:root{
+    /* Colors */
+    /* Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30    , 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+    /* Typography */
+    --fs:1rem;    
+}
+@font-face {
+    font-family: youngSerif;
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+@font-face {
+    font-family: outfit;
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    background-color: var(--eggshell);
+    font-family: outfit;
+    font-size: var(--fs);
+}
+.recipe{
+    max-width: 40rem;
+    padding:2rem;
+    background-color: var(--white);
+}
+.recipe, .recipe__image,.recipe__preperation-time{
+    border-radius: 1rem;
+}
+.recipe__introduction>*{
+    padding-bottom: 1rem;
+}
+.recipe__preperation-time{
+    padding: 1.5rem;
+    background-color: var(--eggshell);
+    }
+    #preperation-time{
+      color: var(--darkRaspberry);
+    }
+    .recipe__preperation-time-list{
+      margin-left:1.5rem;
+    }
+    .recipe__time-item::marker{
+     color:var(--darkRaspberry);
+    }
+.recipe__preperation-time>*,.recipe__time-item{
+    /* margin-top: .5rem; */
+    padding-inline-start: 1rem;
+    padding-bottom: .5rem;
+}
+section:not(.recipe__preperation-time,.recipe__nutrition)  {
+ border-bottom: 1px solid var(--lightGrey);
+ padding-bottom: 1.5rem;
+}
+ #ingredients, #instructions, #nutrition{
+  font-family: youngSerif ;
+  padding: 1.5rem 0;
+  color: var(--Nutmeg);
+ }
+ .recipe__ingredients-item{
+  color: var(--Nutmeg);
+ }
+ ul, ol:not(.recipe__preperation-time-list){
+  padding-left: 1.8rem;
+ }
+ .recipe__ingredients-item,
+ .recipe__instructions-item{
+  padding-inline-start: 1rem;
+  padding-bottom: 0.5rem;
+ }
+
+ table{
+  padding-top: 1rem;
+  width: 100%;
+  text-align: justify;
+ }
+th,td{
+  border-bottom:1px solid var(--lightGrey);
+  border-collapse: collapse;
+ }
+
+ 
