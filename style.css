@@ -93,7 +93,7 @@ section:not(.recipe__preperation-time,.recipe__nutrition)  {
   padding: 1.5rem 0;
   color: var(--Nutmeg);
  }
- .recipe__ingredients-item{
+ .recipe__ingredients-item::marker{
   color: var(--Nutmeg);
  }
  ul, ol:not(.recipe__preperation-time-list){
