@@ -114,7 +114,7 @@ section:not(.recipe__preperation-time,.recipe__nutrition)  {
   width: 100%;
   text-align: justify;
  }
-table, th,td{
+ table,th,td{
   border-bottom:1px solid var(--lightGrey);
   border-collapse: collapse;
   padding: 0.4rem;
@@ -131,4 +131,6 @@ table, th,td{
  tr:last-child td{
   border: 0;
  }
- 
+ table{
+  border-bottom: 0;
+ }
