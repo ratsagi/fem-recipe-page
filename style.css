@@ -70,12 +70,12 @@ body{
   font-family: youngSerif;
 }
 .recipe__preperation-time{
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--roseWhite);
     }
     #preperation-time{
       color: var(--darkRaspberry);
-      font-weight: 700;
+      font-weight: 900;
     }
     .recipe__preperation-time-list{
       margin-left:1.5rem;
@@ -84,7 +84,6 @@ body{
      color:var(--darkRaspberry);
     }
 .recipe__preperation-time>*,.recipe__time-item{
-    /* margin-top: .5rem; */
     padding-inline-start: 1rem;
     padding-bottom: .5rem;
 }
@@ -101,36 +100,41 @@ section:not(.recipe__preperation-time,.recipe__nutrition)  {
   color: var(--Nutmeg);
  }
  ul, ol:not(.recipe__preperation-time-list){
-  padding-left: 1.8rem;
+  padding-left: 1.5rem;
  }
  .recipe__ingredients-item,
  .recipe__instructions-item{
   padding-inline-start: 1rem;
   padding-bottom: 0.5rem;
  }
-
- table{
-  padding-top: 1rem;
-  width: 100%;
-  text-align: justify;
- }
  table,th,td{
   border-bottom:1px solid var(--lightGrey);
   border-collapse: collapse;
   padding: 0.4rem;
  }
+ th{
+  font-weight: 400;
+ }
  td{
   color: var(--Nutmeg);
-  font-weight: 600;
+  font-weight: 700;
 
  }
-
+ table{
+  padding-top: 1rem;
+  width: 100%;
+  text-align: justify;
+  border-bottom: 0;
+ }
  tr:last-child th {
   border: 0;
  }
  tr:last-child td{
   border: 0;
  }
- table{
-  border-bottom: 0;
+ 
+ footer a{
+  font-size: 1rem; 
+  text-align: center;
+  color: hsl(228, 45%, 44%);
  }
