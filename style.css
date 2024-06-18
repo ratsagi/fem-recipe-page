@@ -66,12 +66,16 @@ body{
 .recipe__introduction>*{
     padding-bottom: 1rem;
 }
+.recipe__name{
+  font-family: youngSerif;
+}
 .recipe__preperation-time{
     padding: 1.5rem;
-    background-color: var(--eggshell);
+    background-color: var(--roseWhite);
     }
     #preperation-time{
       color: var(--darkRaspberry);
+      font-weight: 700;
     }
     .recipe__preperation-time-list{
       margin-left:1.5rem;
@@ -110,9 +114,21 @@ section:not(.recipe__preperation-time,.recipe__nutrition)  {
   width: 100%;
   text-align: justify;
  }
-th,td{
+table, th,td{
   border-bottom:1px solid var(--lightGrey);
   border-collapse: collapse;
+  padding: 0.4rem;
+ }
+ td{
+  color: var(--Nutmeg);
+  font-weight: 600;
+
  }
 
+ tr:last-child th {
+  border: 0;
+ }
+ tr:last-child td{
+  border: 0;
+ }
  
